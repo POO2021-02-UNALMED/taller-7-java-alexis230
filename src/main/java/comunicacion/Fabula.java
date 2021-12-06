@@ -1,29 +1,29 @@
 package comunicacion;
 
 public class Fabula extends Escrito{
-    private String Ensenanza;
-    private String Interpretacion;
+    private String ensenanza;
+    private String interpretacion;
 
     public Fabula(String origen, String titulo, String autor, int paginas, String ensenanza, String interpretacion){
         super(origen,titulo, autor, paginas);
-        this.Ensenanza = ensenanza;
-        this.setInterpretacion(interpretacion);
+        this.ensenanza = ensenanza;
+        this.interpretacion=interpretacion;
     }
     
     public void setEnsenanza(String ensenanza){
-        this.Ensenanza = ensenanza;
+        this.ensenanza = ensenanza;
     }
 
     public String getEnsenanza(){
-        return Ensenanza;
+        return ensenanza;
     }
     
     public String getInterpretacion() {
-		return Interpretacion;
+		return interpretacion;
 	}
 
 	public void setInterpretacion(String interpretacion) {
-		Interpretacion = interpretacion;
+		this.interpretacion = interpretacion;
 	}
     
 	@Override
@@ -33,7 +33,7 @@ public class Fabula extends Escrito{
 	
 	@Override
     public String interpretacion() {
-        return Interpretacion;
+        return interpretacion;
     }
 
     @Override
